@@ -23,7 +23,7 @@ kv -rm mykey
 ```
 
 ## Installation
-kvutil requires Python 3.7.
+kvutil requires Python 3.6+.
 
 ### From PyPI
 ```
@@ -31,7 +31,7 @@ pip install kvutil
 ```
 
 ### From source, using [Pyinstaller](https://pyinstaller.readthedocs.io/en/stable/index.html)
-First, install a Python 3.7 environment.
+First, install a Python 3.6+ environment.
 
 Then, run the following commands:
 ```
@@ -48,7 +48,7 @@ $ pyinstaller --onefile kvutil/kv.py
 The resulting executable can be found in `dist/`.
 
 ## Development
-kvutil requires Python 3.7.
+kvutil requires Python 3.6+.
 
 Development dependencies are found in `requirements.txt`. Install them with `pip install -r requirements.txt`.
 
