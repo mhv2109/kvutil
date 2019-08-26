@@ -26,7 +26,9 @@ kv -rm mykey
 kvutil requires Python 3.7.
 
 ### From PyPI
-Coming soon!
+```
+pip install kvutil
+```
 
 ### From source, using [Pyinstaller](https://pyinstaller.readthedocs.io/en/stable/index.html)
 First, install a Python 3.7 environment.

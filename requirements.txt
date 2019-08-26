@@ -7,4 +7,5 @@ rope
 setuptools
 tox
 twine
+wheel
 yapf
