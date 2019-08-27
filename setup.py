@@ -7,7 +7,7 @@ with open("README.md", "r") as readme_f:
 
 setuptools.setup(
     name="kvutil",
-    version="1.0.1",
+    version="1.0.2",
     author="mhv2109",
     description="Comand-line key-value store",
     long_description=long_description,
