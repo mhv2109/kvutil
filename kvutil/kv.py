@@ -66,8 +66,9 @@ def setup_database(args: argparse.Namespace) -> MutableMapping:
 
 
 def get_data_file_path() -> str:
+    home = str(Path.home())
     directory = os.environ.get(
-        "XDG_DATA_DIR", os.path.join(Path.home(), ".local", "share")
+        "XDG_DATA_DIR", os.path.join(home, ".local", "share")
     )
     return os.path.join(directory, DB_FILE_NAME)
 
