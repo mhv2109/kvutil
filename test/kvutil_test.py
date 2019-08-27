@@ -45,10 +45,10 @@ class DataDirectoryTests(unittest.TestCase):
         except KeyError:
             pass
 
-        expected = os.path.join(Path.home(), ".local", "share")
+        expected = os.path.join(str(Path.home()), ".local", "share")
         result = kv.get_data_file_path()
 
-        if not expected in result:
+        if expected not in result:
             self.fail(
                 "Expected data directory to start with '%s', actual: %s"
                 % (expected, result)
@@ -121,7 +121,7 @@ class ListTests(unittest.TestCase):
                 kv.execute_list(db, lockfile)
                 lines = out.getvalue().split("\n")
                 for i in range(num_keys):
-                    self.assertEqual(lines[i], "key%d" % i)
+                    self.assertIn("key%d" % i, lines)
 
 
 if __name__ == "__main__":
